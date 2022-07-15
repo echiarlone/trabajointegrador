@@ -9,6 +9,8 @@
 
 body{
     background-color: #f2f2f2;
+    overflow-x: hidden;
+
 }
 /*Estilos del NAV*/
 nav {
@@ -159,6 +161,10 @@ main {
     height:20rem;
 }
 
+.carousel-indicators button{
+    color:#FFFFFF;
+}
+
 @media only screen and (min-width: 769px) {
     .carousel{
         width:50vw;
@@ -169,6 +175,17 @@ main {
     .products-section{
         height:35rem;
         display:flex;
+    }
+    .carousel-caption{
+        background-color: #0511f2;
+        border: 3px solid #FFFFFF;
+        border-radius: .5rem;
+        box-shadow: 3px 3px 5px rgb(58, 58, 58);
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon,
+    .carousel-indicators button {
+        filter: none;
     }
 }
 
@@ -228,4 +245,90 @@ main {
     }
 }
 
+/*Contacto section*/
+.contact-section{
+    padding:1rem;
+}
 
+.contact-form{
+    display:Flex;
+    flex-direction: column;
+
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.contact-us-container{
+    display:none;
+}
+@media only screen and (min-width: 769px){
+
+    .contact-section{
+        display:flex;
+        justify-content:space-around;
+    }
+    .submit-button{
+        width:fit-content;
+        height:fit-content;
+        padding: 1rem 2rem !important;
+        font-size: 1.5rem !important;
+        margin:auto;
+    }
+
+    .contact-us-container{
+        display:flex;
+        max-width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us-text{
+        font-size: 1.5rem;
+    }
+}
+
+/*Footer section*/
+footer{
+    height:15rem;
+    background-color: #383838;
+    color: #fffFFF ;
+    padding:1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+.bx{
+    color: #fffFFF ;
+    font-size: 2rem;
+}
+
+.contact-link{
+    text-decoration: none;
+}
+
+.footer-logo{
+    width:1.8rem;
+    position:relative;
+    bottom:.2rem;
+}
+
+@media only screen and (min-width: 769px){
+   footer{
+    flex-direction: row;
+    height: 10rem;
+    font-size: 2rem;
+   }
+
+   .left-container, .center-container, .right-container{
+    display:flex;
+    align-items: center;
+    padding:2rem;
+    }
+
+    .bx{
+        font-size: 3rem;
+    }
+}
