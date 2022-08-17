@@ -16,7 +16,7 @@ function initialize() {
 
 
     if (localStorage.getItem('usuario') !== null) {
-        this.usuario = localStorage.getItem('usuario');
+        usuario = localStorage.getItem('usuario');
         document.getElementById('receiver-p').innerHTML = 'Hola ' + usuario + '!';
         document.getElementById('receiver-p').setAttribute('title', 'Numero de visitas: ' + visitas);
     }    
